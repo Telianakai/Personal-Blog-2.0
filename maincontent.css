@@ -1,0 +1,36 @@
+/*__________________________MAIN CONTENT__________________________*/
+#three{
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	text-align: center;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.mainContent{
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 8vh 20vh 27vh;
+}
+
+.title{
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.mainPicture{
+	grid-area: 3 / 1 / 4 / 2;
+	background-image: url('images/postcard.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-image: 2px solid white;
+}
+
+.intro{
+	grid-area: 2 / 1 / 3 / 2;
+}

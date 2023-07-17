@@ -1,0 +1,101 @@
+/*Selector{Property: Value;}*/
+@import url('navbar.css');
+@import url('sidebar.css');
+@import url('maincontent.css');
+
+body{
+	background-color: #AA3939;
+	color: white;
+	font-size: 15px;
+}
+
+h1{
+	color: white;
+	text-shadow:1px 1px 5px #AA3939, 1px 1px 5px #AA3939;
+	font-family: DM Sans, sans-serif;
+	font-size: 1.1em;
+}
+
+h2{
+	color: #AA3939;
+	font-style: italic;
+	font-family: DM Sans, sans-serif;
+	font-size: 90%;
+}
+
+.container{
+	display: grid;
+	width: 100%
+	margin: auto;
+	grid-gap: 15px;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: 100%;
+	grid-template-rows: 5vh 30vh 60vh 5vh;
+	grid-template-areas: 
+	"hd" 
+	"sb"
+	"main"
+	"foot";
+}
+
+.box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #550000;
+	background-color: #FFAAAA;
+	padding: 15px;
+}
+
+/*__________________________FOOTER__________________________*/
+#footer{
+	grid-area: foot;
+	border-radius: 10px;
+	text-align: center;
+	color: #AA3939;
+	font-family: DM Sans, sans-serif;
+	padding: 10px;
+}
+
+/*_______________________RESPONSIVENESS @MEDIA QUERIES_______________________
+If the viewport or device is greater than 900px the layout changes to this!----*/
+@media(min-width:900px){
+	h1{
+		color: white;
+		text-shadow:1px 1px 5px #AA3939, 1px 1px 5px #AA3939;
+		font-family: DM Sans, sans-serif;
+		font-size: 2em;
+	}
+
+	h2{
+		color: #AA3939;
+		font-style: italic;
+		font-family: DM Sans, sans-serif;
+		font-size: 1.5em;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.container{
+		display: grid;
+		width: 100%
+		margin: auto;
+		grid-gap: 15px;
+		justify-content: center;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 5vh 90vh 5vh;
+		grid-template-areas:
+		"hd hd hd hd"
+		"sb main main main"
+		"foot foot foot foot";
+	}
+
+	.mainContent{
+		display: grid;
+		align-content: center;
+		justify-content: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: 12vh 40vh 30vh;
+	}
+}

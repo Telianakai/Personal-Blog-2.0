@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<title>Contact Me</title>
+</head>
+<body>
+	<div class="container">
+<!-- _________________ NAVIGATION BAR ___________________ -->
+		<div class="box" id="header">
+			<header>
+				<nav class="navbar">
+					<a class="navbuttons" rel="noopener" href="index.html">Home</a>
+					<a class="navbuttons" rel="noopener" href="blogposts.html">Blog Posts</a>
+					<a class="navbuttons" rel="noopener" href="contact.html">Contact</a>
+				</nav>
+			</header>
+		</div>
+<!-- _________________ SIDE BAR ___________________ -->
+		<div class="box" id="two">
+		</div>
+<!-- _________________ FORM ___________________ -->
+		<div class="box" id="three">
+			<div class="mainForm">
+			 	<div class="title"><h1>Have Questions About My Blog? Feel Free to Contact Me!</h1></div>
+				<form class="form" method="POST">
+					First Name: <Input type="text" name="firstname" required><br>
+					Last Name: <Input type="text" name="lastname" required><br>
+					Email: <Input type="email" name="email" required><br>
+					Phone: <Input type="text" name="phone"><br>
+					<strong>Reason for Inquiry:</strong>
+					<select name="Inquiry Type" required>
+						<option value="Job Opportunity" name="Job"> Job Opportunity</option>
+						<option value="Project Collaboration" name="Collaboration"> Project Collaboration</option>
+						<option value="Other" name="Other"> Other Reason</option>
+					</select><br>
+					If your reason for inquiry is "other" please explain:<br>
+					<Input type="text" name="reason"><br>
+					<input class="formButton" type="submit" value="Submit"><br>
+					<input class="formButton" type="Reset">
+				</form>
+			</div>
+		</div>
+<!-- _________________ FOOTER ___________________ -->
+		<div class="box" id="footer">
+			<footer>
+	    		<p>&copy; 2023 Telian A. Diggs. All rights reserved.</p>
+	  		</footer>
+  		</div>
+	</div>
+
+</body>
+</html>

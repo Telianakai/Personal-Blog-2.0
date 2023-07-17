@@ -1,0 +1,9 @@
+/*__________________________SIDE BAR__________________________*/
+#two{
+	grid-area: sb;
+	border-radius: 10px;
+	background-image: url('images/webdev.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+}
